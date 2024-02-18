@@ -10,28 +10,10 @@
 @Html.Partial("PartialHead")
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
-    <!-- Navbar Start -->
     @Html.Partial("PartialNavbar")
-    <!-- Navbar End -->
-    <!-- Page Header Start -->
     @Html.Partial("PartialPageHeader")    
-    <!-- Page Header End -->
-    <!-- Product Start -->
     @await Component.InvokeAsync("ProductListComponentPartial")
-    <!-- Product End -->
-    <!-- Firm Visit Start -->
-    <!-- Firm Visit End -->
-    <!-- Testimonial Start -->
-    <!-- Testimonial End -->
-    <!-- Footer Start -->
     @await Component.InvokeAsync("FooterComponentPartial")
-    <!-- Footer End -->
-    <!-- Back to Top -->
     @await Component.InvokeAsync("ScriptComponentPartial")
 </body>
 
