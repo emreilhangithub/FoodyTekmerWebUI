@@ -1,4 +1,14 @@
+using FoodyTekmerBusinessLayer.Abstract;
+using FoodyTekmerBusinessLayer.Concrete;
+using FoodyTekmerDataAccessLayer.Abstract;
+using FoodyTekmerDataAccessLayer.Context;
+using FoodyTekmerDataAccessLayer.EntityFremwork;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<IProductDal, EfProductDal>();
+builder.Services.AddScoped<IProductService, ProductMenager>();
+builder.Services.AddDbContext<FoodyContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
