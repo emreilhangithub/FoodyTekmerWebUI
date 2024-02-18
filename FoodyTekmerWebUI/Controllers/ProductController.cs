@@ -28,5 +28,13 @@ namespace FoodyTekmerWebUI.Controllers
             _productService.TAdd(product);
             return RedirectToAction("Index");
         }
+        public IActionResult DeleteProduct(int id)
+        {
+            _productService.TDelete(id);
+            return RedirectToAction("Index");
+        }
+
+       
+
     }
 }
