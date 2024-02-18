@@ -1,13 +1,10 @@
 ﻿@model List<FoodyTekmerEntityLayer.Concrete.Product>
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-<div class="container">
-    <br /><br />
+<h2> Ürün Listesi </h2>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
@@ -25,12 +22,19 @@
                 <td>@item.Name</td>
                 <td>@item.OldPrice</td>
                 <td>@item.NewPrice</td>
-                <td>@item.Status</td>
+                    <td>
+                        @if (item.Status)
+                {
+                    <span class="btn btn-success">aktif</span>
+                }
+                else
+                {
+                    <span class="btn btn-danger">pasif</span>
+                }
+                    </td>
                 <td><a href="#" class="btn btn-danger">Sil</a></td>
                 <td><a href="#" class="btn btn-success">Güncelle</a></td>
             </tr>
         }
-
     </table>
-
-</div>
+<a href="CreateProduct" class="btn btn-primary"> Yeni Ürün Girişi</a>

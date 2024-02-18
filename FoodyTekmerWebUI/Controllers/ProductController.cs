@@ -1,4 +1,5 @@
 ﻿using FoodyTekmerBusinessLayer.Abstract;
+using FoodyTekmerEntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FoodyTekmerWebUI.Controllers
@@ -11,11 +12,21 @@ namespace FoodyTekmerWebUI.Controllers
         {
             _productService = productService;
         }
-
         public IActionResult Index()
         {
             var values = _productService.TGetAllList();
             return View(values);
+        }
+        [HttpGet]
+        public IActionResult CreateProduct() 
+        { 
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreateProduct(Product product)
+        {
+            _productService.TAdd(product);
+            return RedirectToAction("Index");
         }
     }
 }
