@@ -34,7 +34,18 @@ namespace FoodyTekmerWebUI.Controllers
             return RedirectToAction("Index");
         }
 
-       
+        [HttpGet]
+        public IActionResult UpdateProduct(int id)
+        {
+            var values = _productService.TGetById(id);
+            return View(values);
+        }
+        [HttpPost]
+        public IActionResult UpdateProduct(Product product)
+        {
+            _productService.TUpdate(product);
+            return RedirectToAction("Index");
+        }
 
     }
 }

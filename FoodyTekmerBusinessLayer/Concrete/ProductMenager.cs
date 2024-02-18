@@ -55,14 +55,8 @@ namespace FoodyTekmerBusinessLayer.Concrete
 
         public void TUpdate(Product entity)
         {
-            if (entity.ProductId != 0 && entity.Name != "" && entity.Name.Length <= 3 && entity.NewPrice > 0)
-            {
+          
                 _productDal.Update(entity);
-            }
-            else 
-            {
-                //hata mesajı
-            }
 
         }
     }
