@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FoodyTekmerDataAccessLayer.Repositories
 {
-    public class GenericRepository<T> : IGenerikDal<T> where T : class
+    public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         FoodyContext context = new FoodyContext();
         public void Add(T entity)

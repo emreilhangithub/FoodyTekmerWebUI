@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FoodyTekmerDataAccessLayer.EntityFremwork
 {
-    public class EfTestimonialDal: GenericRepository<Testimonial>,ITestimonialDal
+    public class EfCategoryDal:GenericRepository<Category>,ICategoryDal
     {
     }
 }

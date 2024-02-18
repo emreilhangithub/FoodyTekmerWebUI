@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FoodyTekmerDataAccessLayer.Abstract
 {
-    public interface ITestimonial:IGenerikDal<Testimonial>
+    public interface ITestimonialDal:IGenericDal<Testimonial>
     {
     }
 }

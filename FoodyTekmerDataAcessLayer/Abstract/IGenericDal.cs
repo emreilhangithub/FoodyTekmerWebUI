@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoodyTekmerDataAccessLayer.Abstract
 {
-    public interface IGenerikDal<T> where T : class
+    public interface IGenericDal<T> where T : class
     {
         void Add(T entity);
         void Delete(int id);
