@@ -19,4 +19,4 @@
 
 ![UrunGuncelle](https://github.com/emreilhangithub/FoodyTekmerWebUI/blob/master/images/UrunGuncelle.png)
 
-```.NET``` ```C#``` ```MSSQL```  ```WindowsForm``` ```Software``` ```Computer``` ```Programmer```
+```C#``` ```ASP.NET Core``` ```MSSQL``` ```Entity Framework``` ```SOLID``` ```Software``` ```Programmer```
