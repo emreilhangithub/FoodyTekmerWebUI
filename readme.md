@@ -13,10 +13,14 @@
 ![Urunlerimiz](https://github.com/emreilhangithub/FoodyTekmerWebUI/blob/master/images/Urunlerimiz.png)
 
 ### AdminPaneli
+
+### Ürün Listesi
 ![UrunListesi](https://github.com/emreilhangithub/FoodyTekmerWebUI/blob/master/images/UrunListesi.png)
 
+### Yeni Ürün Ekle
 ![YeniUrunEkle](https://github.com/emreilhangithub/FoodyTekmerWebUI/blob/master/images/YeniUrunEkle.png)
 
+### Ürün Güncelle
 ![UrunGuncelle](https://github.com/emreilhangithub/FoodyTekmerWebUI/blob/master/images/UrunGuncelle.png)
 
 ```C#``` ```ASP.NET Core``` ```MSSQL``` ```Entity Framework``` ```SOLID``` ```Software``` ```Programmer```
